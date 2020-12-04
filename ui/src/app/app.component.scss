@@ -1,0 +1,14 @@
+body{
+  font-family: sans-serif;
+  color:#58585b;
+}
+
+app-player {
+  background-color: #1e4471;
+  display: block;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 10px;
+  box-shadow: 0 0 14px -5px #000;
+}

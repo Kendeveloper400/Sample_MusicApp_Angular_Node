@@ -1,0 +1,53 @@
+.music-wrapper {
+  border-bottom: 1px solid #dfdfdf;
+  display: flex;
+  align-items: center;
+  padding:10px;
+  transition: all .1s;
+  cursor: pointer;
+  .play-icon{
+    display: none;
+  }
+  >div{
+    h4{
+      margin:0 0 5px 0;
+    }
+    p{
+      margin:0;
+    }
+  }
+  img{
+    height: 50px;
+    width: 50px;
+    margin-right: 18px;
+    border: 1px solid #585858;
+    border-radius: 5px;
+  }
+  h4{
+    margin-right: 10px;
+  }
+  span {
+    justify-content: flex-end;
+    display: inline-flex;
+    flex: 1;
+  }
+  &:hover{
+    background: #1e4471;
+    color:#fff;
+  }
+  &:hover .play-icon{
+    display:block;
+    margin-right:10px;
+    transition: all .2s ease-in-out;
+  }
+}
+.active{
+  background: #1e4471;
+  color:#fff;
+  .play-icon{
+    display: block;
+    margin-right:10px;
+    transition: all .2s ease-in-out;
+  }
+}
+

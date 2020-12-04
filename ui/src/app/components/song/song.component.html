@@ -1,0 +1,11 @@
+<div class="music-wrapper" [ngClass]="{'active': isSelected}" (click)="songClicked()">
+    <div class="play-icon">
+        <mat-icon>play_circle_outline</mat-icon>
+    </div>
+    <img src="{{song.songimage}}" class="music-thumbsnail" />
+    <div>
+    <h4>{{song.songame}}</h4>
+      <p>{{song.artist}}</p>
+    </div>
+    <span>{{song.duration}}</span>
+</div>

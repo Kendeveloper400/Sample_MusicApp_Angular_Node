@@ -1,0 +1,30 @@
+.songs-list {
+    max-height: 456px;
+    width: 98%;
+    margin: 0 auto;
+    border: 1px solid #dfdfdf;
+    overflow: auto;
+
+}
+.search {
+  margin: 0 1%;
+  display: flex;
+  flex-direction: row-reverse;
+  button{
+      border: 0;
+      background: none;
+      color: #58585b;
+  }
+  .mat-form-field-underline {
+    background-color: #1e4471;
+  }
+  .mat-form-field {
+    width: 400px;
+  }
+  .mat-form-field-label {
+    color: red;
+  }
+  .mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: red !important;
+  }
+}

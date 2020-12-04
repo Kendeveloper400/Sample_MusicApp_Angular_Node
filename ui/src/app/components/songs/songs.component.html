@@ -1,0 +1,13 @@
+<div class="search">
+  <mat-form-field class="example-form-field">
+    <input matInput type="text" placeholder="Search Songs" [(ngModel)]="value" (ngModelChange)="applyFilter(value)">
+    <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''; applyFilter('')">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</div>
+<div class="songs-list">
+    <div *ngFor="let song of songs">
+        <app-song [song]="song" (selectSong)="clickHandler($event)" [isSelected]="selectedSong.id === song.id"></app-song>
+    </div>
+</div>
